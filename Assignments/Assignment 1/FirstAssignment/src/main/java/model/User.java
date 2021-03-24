@@ -1,10 +1,15 @@
 package model;
 
-public class AdminUser {
+import database.Constants.*;
+
+import java.util.List;
+
+public class User {
 
     private int id;
     private String username;
     private String password;
+    private List<Roles> roles;
 
     public int getId() {
         return id;
@@ -28,5 +33,13 @@ public class AdminUser {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Roles> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Roles> roles) {
+        this.roles = roles;
     }
 }
