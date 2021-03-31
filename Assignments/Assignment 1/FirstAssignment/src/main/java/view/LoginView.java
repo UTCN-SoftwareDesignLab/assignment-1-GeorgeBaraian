@@ -33,11 +33,11 @@ public class LoginView extends JFrame {
         btnRegister = new JButton("Register");
     }
 
-    private String getUsername() {
+    public String getUsername() {
         return tfUsername.getText();
     }
 
-    private String getPassword(){
+    public String getPassword(){
         return tfPassword.getText();
     }
 
